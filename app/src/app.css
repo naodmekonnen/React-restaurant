@@ -1,0 +1,7 @@
+.navbar{
+    display:flex;
+}
+
+.card-body{
+    border: 5px solid black;
+}

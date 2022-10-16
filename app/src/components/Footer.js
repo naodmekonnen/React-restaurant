@@ -1,10 +1,16 @@
 function Footer(){
     return(
-        <div className="card">
-  <div className="card-body">
-    This is some text within a card body.
-  </div>
-</div>
+     <div className=''>
+      <div className="container-fluid">
+        <footer className='h-auto'>
+          <div className="justify-items-center">
+          <h6>348 E Main St. Lexington, KY</h6>
+          <h6>HOURS: 10:00PM - 10:01PM </h6>
+          </div>
+        </footer>
+      </div>
+
+     </div>
     )
 }
 

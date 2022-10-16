@@ -1,6 +1,7 @@
 import axios from 'axios'
 // import React, { useMemo } from 'react';
 import Header from './components/Header';
+import Home from './components/Home';
 import Dinner from './components/Dinner';
 import Lunch from './components/Lunch';
 import Breakfast from './components/Breakfast'
@@ -28,17 +29,15 @@ axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
         return(
           <>
           <Header handleClick={setPage}/>
+          {page === 'Home'&& <Home />}
           {page === 'Breakfast' && <Breakfast fullList={data}/>}
           {page === 'Lunch' && <Lunch fullList={data}/>}
           {page === 'Dinner' && <Dinner fullList={data}/>}
           {page === 'Appetizer' && <Appetizer fullList={data}/>}
           {page === 'Dessert' && <Dessert fullList={data}/>}
-
-
-         </>
+          </>
         )
-
-      }
+       }
 
 
       

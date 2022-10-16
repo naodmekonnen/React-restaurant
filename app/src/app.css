@@ -5,3 +5,9 @@
 .card-body{
     border: 1px solid black;
 }
+
+#img {
+    background-image: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+}

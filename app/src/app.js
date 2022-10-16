@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Dinner from './components/Dinner';
 import Lunch from './components/Lunch';
 import Breakfast from './components/Breakfast'
+import Appetizer from './components/Appetizer';
+import Dessert from './components/Dessert'
 import { useState, useEffect } from 'react'
 
 export default function App(){
@@ -29,6 +31,10 @@ axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
           {page === 'Breakfast' && <Breakfast fullList={data}/>}
           {page === 'Lunch' && <Lunch fullList={data}/>}
           {page === 'Dinner' && <Dinner fullList={data}/>}
+          {page === 'Appetizer' && <Appetizer fullList={data}/>}
+          {page === 'Dessert' && <Dessert fullList={data}/>}
+
+
          </>
         )
 

@@ -1,10 +1,10 @@
-export default function Dessertfood(props) {
+export default function Appetizer(props) {
 
-    let meal = props.fullList.filter(dessert =>
-        dessert.category.title === 'Dessert')
-    let dessertItems = []
+    let meal = props.fullList.filter(appetizer =>
+        appetizer.category.title === 'Appetizer')
+    let appItems = []
     for (let i = 0; i < meal.length; i++) {
-        dessertItems.push(
+        appItems.push(
             <>
             <div>
                 <div class="card" style={{ width: '18rem' }}>
@@ -22,5 +22,5 @@ export default function Dessertfood(props) {
             </>
         )
     }
-    return (<>{dessertItems}</>)
+    return (<>{appItems}</>)
 };

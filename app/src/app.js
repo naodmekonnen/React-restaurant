@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react'
 export default function App(){
 
 const [data, setdata] = useState(null);
-const [page, setPage] = useState('');
+const [page, setPage] = useState('Home');
 
 useEffect(()=>{
 axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
@@ -23,7 +23,11 @@ axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
         }, []);
       
         if (!data) return(
+          <>
           <Header />
+          <Home/>
+          <Footer/>
+          </>
         );
 
         return(

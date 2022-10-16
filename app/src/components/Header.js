@@ -1,7 +1,7 @@
 function Header(props){
     return(
         <Header>
-
+          <div className="text-center text-danger"><h2>imPASTA syndrome</h2></div>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
     <div><button onClick={() => props.handleClick('Home')} type="button" className="btn btn-outline-secondary">Home</button></div>

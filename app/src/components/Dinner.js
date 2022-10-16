@@ -1,22 +1,31 @@
+export default function Dinnerfood(props) {
 
-// export default function Dinner(props){
-//     let foodItem = data.filter(dinner =>
-//         dinner.category.title === 'Dinner'
-//       );
-//       console.log(foodItem)
-//     let dinnerItems = []
-//     for (let i=0; i<foodItem.length; i++){
-//         dinnerItems.push(
-            
-//   <>
-//             <div>
-//             <h4>{foodItem[i].title}</h4>
-//             <h4>{foodItem[i].price}</h4>
-//             <p>{foodItem[i].description}</p>
-                     
-//             </div>
-//     </> 
-//     )
-// }
-//     return <>{dinnerItems}</>    
-// }
+    let meal = props.fullList.filter(dinner =>
+        dinner.category.title === 'Dinner')
+    let dinnerItems = []
+    for (let i = 0; i < meal.length; i++) {
+        dinnerItems.push(
+            <>
+            <div>
+                <div class="card" style={{ width: '18rem' }}>
+                        <div class="card-body">
+                            <p class="card-text">
+
+                                <h4>{meal[i].title}</h4>
+                                <p>{meal[i].description}</p>
+                                <h4>{meal[i].price}</h4>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    return (<>{dinnerItems}</>)
+};
+
+
+
+
+

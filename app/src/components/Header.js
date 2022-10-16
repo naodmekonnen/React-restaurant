@@ -1,6 +1,10 @@
-function Header(){
+function Header(props){
     return(
-        <header><h1>HELLO</h1></header>
+        <header>
+        <div><button onClick={() => props.handleClick('Breakfast')}>Breakfast</button></div>
+        <div><button onClick={() => props.handleClick('Lunch')}>Lunch</button></div>
+        <div><button onClick={() => props.handleClick('Dinner')}>Dinner</button></div>
+        </header>
     )
 }
 

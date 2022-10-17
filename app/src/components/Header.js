@@ -1,50 +1,50 @@
-function Header(props){
-    return(
-        <Header>
-          <div className="text-center text-danger"><h2>imPASTA syndrome</h2></div>
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Home')} type="button" className="btn btn-outline-secondary">Home</button></div>
+function Header(props) {
+  return (
+    <Header>
+      <div className="text-center text-danger"><h2>imPASTA syndrome</h2></div>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div><button onClick={() => props.handleClick('Home')} type="button" className="btn btn-outline-secondary">Home</button></div>
 
-    </div>
-  </nav>
-          
-<div class="container">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Breakfast')} type="button" className="btn btn-outline-secondary">Breakfast</button></div>
+        </div>
+      </nav>
 
-    </div>
-  </nav>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div><button onClick={() => props.handleClick('Breakfast')} type="button" className="btn btn-outline-secondary">Breakfast</button></div>
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Lunch')} type="button" className="btn btn-outline-secondary">Lunch</button></div>
+          </div>
+        </nav>
 
-    </div>
-  </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div><button onClick={() => props.handleClick('Lunch')} type="button" className="btn btn-outline-secondary">Lunch</button></div>
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Dinner')} type="button" className="btn btn-outline-secondary">Dinner</button></div>
+          </div>
+        </nav>
 
-    </div>
-  </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div><button onClick={() => props.handleClick('Dinner')} type="button" className="btn btn-outline-secondary">Dinner</button></div>
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Dessert')} type="button" className="btn btn-outline-secondary">Dessert</button></div>
+          </div>
+        </nav>
 
-    </div>
-  </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div><button onClick={() => props.handleClick('Dessert')} type="button" className="btn btn-outline-secondary">Dessert</button></div>
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <div><button onClick={() => props.handleClick('Appetizer')} type="button" className="btn btn-outline-secondary">Appetizers</button></div>
-    </div>
-  </nav>
-</div>
-</Header>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div><button onClick={() => props.handleClick('Appetizer')} type="button" className="btn btn-outline-secondary">Appetizers</button></div>
+          </div>
+        </nav>
+      </div>
+    </Header>
   )
 }
 export default Header;

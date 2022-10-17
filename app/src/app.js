@@ -1,6 +1,7 @@
 import axios from 'axios'
 // import React, { useMemo } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Dinner from './components/Dinner';
 import Lunch from './components/Lunch';

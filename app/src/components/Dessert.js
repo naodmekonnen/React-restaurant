@@ -23,4 +23,5 @@ export default function Dessertfood(props) {
         )
     }
     return (<>{dessertItems}</>)
+    console.log(dessertItems)
 };

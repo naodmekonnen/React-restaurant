@@ -26,4 +26,5 @@ export default function Breakfastfood(props) {
         )
     }
     return (<>{breakfastItems}</>)
+    console.log(breakfastItems)
 };

@@ -23,4 +23,5 @@ export default function Appetizer(props) {
         )
     }
     return (<>{appItems}</>)
+    console.log(appItems)
 };

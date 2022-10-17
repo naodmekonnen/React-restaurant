@@ -23,6 +23,7 @@ export default function Dinnerfood(props) {
         )
     }
     return (<>{dinnerItems}</>)
+    console.log(dinnerItems)
 };
 
 

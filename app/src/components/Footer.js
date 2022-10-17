@@ -15,3 +15,4 @@ function Footer(){
 }
 
 export default Footer;
+console.log(Footer)

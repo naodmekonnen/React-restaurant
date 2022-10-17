@@ -1,6 +1,6 @@
 function Footer(){
     return(
-     <div className=''>
+     <div className='footer'>
       <div className="container-fluid">
         <footer className='h-auto'>
           <div className="justify-items-center">

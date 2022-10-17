@@ -12,37 +12,37 @@ import { useState, useEffect } from 'react'
 
 export default function App(){
 
-const [data, setdata] = useState(null);
-const [page, setPage] = useState('Home');
+  const [data, setdata] = useState(null);
+  const [page, setPage] = useState('Home');
 
-useEffect(()=>{
-axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
-    .then((response) => {   
-            setdata(response.data);
-            console.log(response.data)
-          });
-        }, []);
+  useEffect(()=>{
+    axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
+      .then((response) => {   
+        setdata(response.data);
+        console.log(response.data)
+      });
+    }, []);
       
-        if (!data) return(
-          <>
-          <Header />
-          <Home/>
-          <Footer/>
-          </>
-        );
+  if (!data) return(
+    <>
+    <Header />
+    <Home/>
+    <Footer/>
+    </>
+  );
 
-        return(
-          <>
-          <Header handleClick={setPage}/>
-          {page === 'Home'&& <Home />}
-          {page === 'Breakfast' && <Breakfast fullList={data}/>}
-          {page === 'Lunch' && <Lunch fullList={data}/>}
-          {page === 'Dinner' && <Dinner fullList={data}/>}
-          {page === 'Appetizer' && <Appetizer fullList={data}/>}
-          {page === 'Dessert' && <Dessert fullList={data}/>}
-          </>
-        )
-       }
+  // return(
+  //   <>
+  //   <Header handleClick={setPage}/>
+  //   {page === 'Home'&& <Home />}
+  //   {page === 'Breakfast' && <Breakfast fullList={data}/>}
+  //   {page === 'Lunch' && <Lunch fullList={data}/>}
+  //   {page === 'Dinner' && <Dinner fullList={data}/>}
+  //   {page === 'Appetizer' && <Appetizer fullList={data}/>}
+  //   {page === 'Dessert' && <Dessert fullList={data}/>}
+  //   </>
+  // )
+}
 
 
       

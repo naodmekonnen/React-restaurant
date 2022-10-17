@@ -1,6 +1,6 @@
 function Header(props) {
   return (
-    <Header>
+    <div>
       <div className="text-center text-danger"><h2>imPASTA syndrome</h2></div>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -44,7 +44,7 @@ function Header(props) {
           </div>
         </nav>
       </div>
-    </Header>
+      </div>
   )
 }
 export default Header;

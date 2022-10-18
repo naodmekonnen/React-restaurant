@@ -31,17 +31,18 @@ export default function App(){
     </>
   );
 
-  // return(
-  //   <>
-  //   <Header handleClick={setPage}/>
-  //   {page === 'Home'&& <Home />}
-  //   {page === 'Breakfast' && <Breakfast fullList={data}/>}
-  //   {page === 'Lunch' && <Lunch fullList={data}/>}
-  //   {page === 'Dinner' && <Dinner fullList={data}/>}
-  //   {page === 'Appetizer' && <Appetizer fullList={data}/>}
-  //   {page === 'Dessert' && <Dessert fullList={data}/>}
-  //   </>
-  // )
+  return(
+    <>
+    <Header handleClick={setPage}/>
+    {page === 'Home'&& <Home />}
+    {page === 'Breakfast' && <Breakfast fullList={data}/>}
+    {page === 'Lunch' && <Lunch fullList={data}/>}
+    {page === 'Dinner' && <Dinner fullList={data}/>}
+    {page === 'Appetizer' && <Appetizer fullList={data}/>}
+    {page === 'Dessert' && <Dessert fullList={data}/>}
+    <Footer/>
+     </>
+  )
 }
 
 

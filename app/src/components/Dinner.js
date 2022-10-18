@@ -7,7 +7,7 @@ export default function Dinnerfood(props) {
         dinnerItems.push(
             <>
             <div>
-                <div class="card" style={{ width: '18rem' }}>
+                <div class="card w-100" style={{ width: '18rem' }}>
                         <div class="card-body">
                             <p class="card-text">
 

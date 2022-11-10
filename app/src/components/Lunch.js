@@ -11,13 +11,13 @@ export default function Lunchfood(props) {
 
           <div className="card w-100" style={{ width: '18rem' }}>
             <div className="card-body">
-              <p className="card-text">
+              <h3 className="card-text">
 
                 <h4>{meal[i].title}</h4>
-                <p>{meal[i].description}</p>
+                <h4>{meal[i].description}</h4>
                 <h4>{meal[i].price}</h4>
 
-              </p>
+              </h3>
             </div>
           </div>
         </div>

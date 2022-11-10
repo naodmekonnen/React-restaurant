@@ -16,7 +16,7 @@ export default function App(){
   const [page, setPage] = useState('Home');
 
   useEffect(()=>{
-    axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
+    axios.get('https://8000-naodmekonne-reactrestau-3i7odx9bo8c.ws-us75.gitpod.io/menu/')
       .then((response) => {   
         setdata(response.data);
         console.log(response.data)

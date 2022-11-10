@@ -1,3 +1,6 @@
+
+
+
 function Header(props) {
   return (
     <div className="container-fluid">
@@ -13,7 +16,7 @@ function Header(props) {
       </div>
   )
 }
-export default Header;
+export default Header
 
 
 

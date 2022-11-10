@@ -2,7 +2,7 @@ function Header(props) {
   return (
     <div className="container-fluid">
       <div className="text-center"><h2>imPASTA syndrome</h2></div>
-      <nav class="navbar justify-content-center navbar-expand-lg bg-light">
+      <nav className="navbar justify-content-center navbar-expand-lg bg-light">
         <div><button onClick={() => props.handleClick('Home')} type="button" className="btn btn-outline-secondary">Home</button></div>
         <div><button onClick={() => props.handleClick('Breakfast')} type="button" className="btn btn-outline-secondary">Breakfast</button></div>
         <div><button onClick={() => props.handleClick('Lunch')} type="button" className="btn btn-outline-secondary">Lunch</button></div>

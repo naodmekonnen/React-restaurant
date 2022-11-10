@@ -10,9 +10,9 @@ export default function Breakfastfood(props) {
             <>
                 <div>
 
-                    <div class="card w-100" style={{ width: '18rem' }}>
-                        <div class="card-body">
-                            <p class="card-text">
+                    <div className="card w-100" style={{ width: '18rem' }}>
+                        <div className="card-body">
+                            <p className="card-text">
 
                                 <h4>{meal[i].title}</h4>
                                 <p>{meal[i].description}</p>
